@@ -36,8 +36,8 @@ public class BookingTest {
 
 	@BeforeTest
 	public void openB() throws InterruptedException {
-		//driver = OpenBrowsers.openBrowser("chrome");
-		driver = OpenBrowsers.openchromeWithOptions();
+		driver = OpenBrowsers.openBrowser("chrome");
+		//driver = OpenBrowsers.openchromeWithOptions();
 		Thread.sleep(3000);
 		driver.manage().window().maximize();
 		driver.get("https://www.booking.com/");
